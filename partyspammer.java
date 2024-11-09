@@ -1,3 +1,4 @@
+// load - "https://raw.githubusercontent.com/uncummon/pasted-raven-scripts/refs/heads/main/partyspammer.java"
 // hi
 
 String ign;
