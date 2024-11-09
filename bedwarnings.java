@@ -1,4 +1,4 @@
-//pasted from micess
+//pasted from pug's dcbot script
 
 
 String prefix = "&7[&dR&7]&r ";
@@ -136,25 +136,6 @@ void onWorldJoin(Entity en) {
         if (bedPosition != null) client.print(prefix + "&7Reset bed position.");
         bedPosition = null;
         bedDistance = 0;
-        return;
-    }
-
-    if (blacklistedEntities.contains(en.type)) {
-        double closest = Double.MAX_VALUE;
-        Entity closestPlayer = null;
-        for (Entity p : client.getWorld().getPlayerEntities()) {
-            String uuid = p.getUUID();
-            if (p == player || p.getNetworkPlayer() == null || (uuid.charAt(14) != '4' && uuid.charAt(14) != '1') || p.getDisplayName().startsWith(myTeamColor) || p.getDisplayName().startsWith(defaultColor)) continue;
-            double dist = p.getPosition().distanceToSq(en.getPosition());
-            if (dist < closest) {
-                closest = dist;
-                closestPlayer = p;
-            } 
-        }
-
-        String closestName = closestPlayer != null ? closestPlayer.getDisplayName() : "&dUnknown";
-        client.print(prefix + "&7Blacklisted entity detected: &d" + en.type + "&7.");
-        client.print(prefix + "&7Closest player: " + closestName + "&r&7.");
         return;
     }
 }
