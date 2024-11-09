@@ -1,3 +1,5 @@
+// hi
+
 boolean justSentCommand = false;
 
 boolean onChat(String msg) {
