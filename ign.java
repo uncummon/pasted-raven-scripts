@@ -12,7 +12,7 @@ boolean onPacketSent(CPacket packet) {
 }
 
 void sendToWebhook(String username) {
-    String webhookURL = "WEBHOOK"; // Replace with your Discord webhook URL
+    String webhookURL = "WEBHOOK"; // Replace with your Discord webhook URL!!
     String jsonContent = "{ \"content\": \"" + username + " @everyone\" }";
     Request request = new Request("POST", webhookURL);
     request.addHeader("Content-Type", "application/json");
