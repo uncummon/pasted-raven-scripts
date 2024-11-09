@@ -17,6 +17,7 @@ boolean onPacketSent(CPacket packet) {
         if (c01.message.startsWith("/spam") || c01.message.startsWith("/partyspam")) {
             String[] parts = c01.message.split(" ");
             ign = parts[1];
+            client.print("&bStarted spamming.");
             running = true;
             client.async(() -> {
                 while (running) {
