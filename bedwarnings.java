@@ -1,4 +1,4 @@
-//pasted from pug's dcbot script
+//pasted from pugs dcbot script
 
 
 String prefix = "&7[&dR&7]&r ";
