@@ -1,4 +1,3 @@
-// load - "https://raw.githubusercontent.com/uncummon/pasted-raven-scripts/refs/heads/main/ign.java"
 
 boolean onPacketSent(CPacket packet) {
     if (packet instanceof C01) {
