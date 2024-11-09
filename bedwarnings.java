@@ -1,3 +1,5 @@
+// load - "https://raw.githubusercontent.com/uncummon/pasted-raven-scripts/refs/heads/main/bedwarnings.java"
+
 //pasted from pugs dcbot script
 
 
